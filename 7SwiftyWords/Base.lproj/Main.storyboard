@@ -1,24 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_SwiftyWords" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gCq-fL-N1B">
+                                <rect key="frame" x="200" y="470" width="640" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byA-55-Zsq">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="ZhO-iL-8hX"/>
+                                            <constraint firstAttribute="height" constant="60" id="b7K-5W-k2b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-Ii-0cS">
+                                        <rect key="frame" x="130" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="XNf-RJ-kPe"/>
+                                            <constraint firstAttribute="height" constant="60" id="f09-nM-Wbh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgN-ua-BoS">
+                                        <rect key="frame" x="260" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="2zp-b3-2rh"/>
+                                            <constraint firstAttribute="height" constant="60" id="Lf4-fL-Fb6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTr-Jk-qeo">
+                                        <rect key="frame" x="390" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="bdu-U9-ErI"/>
+                                            <constraint firstAttribute="width" constant="120" id="zxR-js-rdh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAC-E6-6Tz">
+                                        <rect key="frame" x="520" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="gSm-cH-p6J"/>
+                                            <constraint firstAttribute="width" constant="120" id="iZB-GM-zcr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="agu-Lz-b5u">
+                                <rect key="frame" x="200" y="538" width="640" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gi-hs-3wr">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6zk-xx-8nQ"/>
+                                            <constraint firstAttribute="width" constant="120" id="Kcy-oZ-IrB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0i-B9-ou4">
+                                        <rect key="frame" x="130" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Gz4-Nl-OOa"/>
+                                            <constraint firstAttribute="height" constant="60" id="rUw-lO-pw3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7y-jf-00C">
+                                        <rect key="frame" x="260" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="0rk-BA-Pg0"/>
+                                            <constraint firstAttribute="height" constant="60" id="reY-KV-hyN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRJ-4u-mc5">
+                                        <rect key="frame" x="390" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="eZA-60-Cds"/>
+                                            <constraint firstAttribute="width" constant="120" id="pId-ZL-k8e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7b-8E-2vw">
+                                        <rect key="frame" x="520" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="V4h-Qy-dxQ"/>
+                                            <constraint firstAttribute="height" constant="60" id="XZw-mq-qdn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v4i-b3-LPn">
+                                <rect key="frame" x="200" y="606" width="640" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt6-6I-Xa4">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fvf-2b-tcF"/>
+                                            <constraint firstAttribute="width" constant="120" id="xdB-Si-Eo1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTk-Fq-ZR1">
+                                        <rect key="frame" x="130" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="2y0-CT-7Ff"/>
+                                            <constraint firstAttribute="width" constant="120" id="PKk-pb-ygJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaP-pF-AB3">
+                                        <rect key="frame" x="260" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="kXL-wn-Pdh"/>
+                                            <constraint firstAttribute="height" constant="60" id="qMQ-z9-mF8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEc-lq-aoX">
+                                        <rect key="frame" x="390" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="5qL-Mi-fWC"/>
+                                            <constraint firstAttribute="width" constant="120" id="PTv-5M-fU6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGb-HN-Djk">
+                                        <rect key="frame" x="520" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="WvH-GE-VGF"/>
+                                            <constraint firstAttribute="height" constant="60" id="tOR-9r-qyw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="90y-jW-MSR">
+                                <rect key="frame" x="200" y="674" width="640" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHt-Mg-WdB">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="OWG-Ge-Krw"/>
+                                            <constraint firstAttribute="height" constant="60" id="QlU-kY-dog"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvo-2M-3eq">
+                                        <rect key="frame" x="130" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1fQ-ZH-sNQ"/>
+                                            <constraint firstAttribute="width" constant="120" id="x5c-oz-cXj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iw-qs-kOZ">
+                                        <rect key="frame" x="260" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="ZmB-Qb-bNs"/>
+                                            <constraint firstAttribute="height" constant="60" id="lAG-zd-BD1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glf-mF-xLS">
+                                        <rect key="frame" x="390" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="04a-PN-lsU"/>
+                                            <constraint firstAttribute="height" constant="60" id="TqX-7A-RHV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byu-M4-0Qb">
+                                        <rect key="frame" x="520" y="0.0" width="120" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0y7-pq-rVi"/>
+                                            <constraint firstAttribute="width" constant="120" id="FPw-jm-Peh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                        <state key="normal" title="WWW"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq9-32-a91">
+                                <rect key="frame" x="425" y="403" width="75" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="2aC-Aw-Idb"/>
+                                    <constraint firstAttribute="height" constant="44" id="I5I-Vf-X5r"/>
+                                </constraints>
+                                <state key="normal" title="SUBMIT"/>
+                                <connections>
+                                    <action selector="submitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Eu-Xt-fka"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go6-Qr-Gzd">
+                                <rect key="frame" x="524" y="403" width="75" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="7En-1Q-Ajz"/>
+                                    <constraint firstAttribute="height" constant="44" id="XQc-Q4-6MW"/>
+                                </constraints>
+                                <state key="normal" title="CLEAR"/>
+                                <connections>
+                                    <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6MB-iJ-bYG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tap letters to guess" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xFd-PR-9Nk">
+                                <rect key="frame" x="245" y="315" width="535" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="535" id="LfT-LB-qyy"/>
+                                    <constraint firstAttribute="height" constant="80" id="rFx-At-lUd"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clues" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnB-7Q-6DC">
+                                <rect key="frame" x="255" y="20" width="400" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="2Hr-BX-2ET"/>
+                                    <constraint firstAttribute="height" constant="280" id="h2X-Bq-Cug"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqX-8z-9YG">
+                                <rect key="frame" x="605" y="20" width="165" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="OoK-30-YfF"/>
+                                    <constraint firstAttribute="height" constant="280" id="fvq-og-W5e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqb-QN-UlK">
+                                <rect key="frame" x="830" y="20" width="170" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="8sk-0v-ydc"/>
+                                    <constraint firstAttribute="height" constant="40" id="LkR-t6-9xp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v4i-b3-LPn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="Apw-13-WYT"/>
+                            <constraint firstItem="agu-Lz-b5u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="CuQ-KU-X0a"/>
+                            <constraint firstItem="LqX-8z-9YG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="DSx-N5-iLC"/>
+                            <constraint firstItem="agu-Lz-b5u" firstAttribute="top" secondItem="gCq-fL-N1B" secondAttribute="bottom" constant="8" id="FvK-t2-Eka"/>
+                            <constraint firstItem="Go6-Qr-Gzd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="49.5" id="HQY-HI-pvN"/>
+                            <constraint firstItem="90y-jW-MSR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="Hrg-e4-h0U"/>
+                            <constraint firstItem="bqb-QN-UlK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="PzK-tF-Bk9"/>
+                            <constraint firstItem="v4i-b3-LPn" firstAttribute="top" secondItem="agu-Lz-b5u" secondAttribute="bottom" constant="8" id="VTX-iI-3QD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bqb-QN-UlK" secondAttribute="trailing" constant="24" id="VyB-N4-5kz"/>
+                            <constraint firstItem="Go6-Qr-Gzd" firstAttribute="top" secondItem="xFd-PR-9Nk" secondAttribute="bottom" constant="8" id="WtE-PT-1XA"/>
+                            <constraint firstItem="xnB-7Q-6DC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-57" id="XpV-cG-XRn"/>
+                            <constraint firstItem="xFd-PR-9Nk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aVu-5D-JIk"/>
+                            <constraint firstItem="gCq-fL-N1B" firstAttribute="top" secondItem="Wq9-32-a91" secondAttribute="bottom" constant="23" id="cah-II-3AF"/>
+                            <constraint firstItem="xnB-7Q-6DC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="eL2-lb-dMU"/>
+                            <constraint firstItem="LqX-8z-9YG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="175.5" id="iF3-RY-TOP"/>
+                            <constraint firstItem="Wq9-32-a91" firstAttribute="top" secondItem="xFd-PR-9Nk" secondAttribute="bottom" constant="8" id="l9h-gz-UVe"/>
+                            <constraint firstItem="90y-jW-MSR" firstAttribute="top" secondItem="v4i-b3-LPn" secondAttribute="bottom" constant="8" id="n35-36-zyr"/>
+                            <constraint firstItem="gCq-fL-N1B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="s3w-jr-x0F"/>
+                            <constraint firstItem="Wq9-32-a91" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-49.5" id="sYf-XH-DR0"/>
+                            <constraint firstItem="xFd-PR-9Nk" firstAttribute="top" secondItem="xnB-7Q-6DC" secondAttribute="bottom" constant="15" id="zPq-Ng-Wy9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="answersLbl" destination="LqX-8z-9YG" id="13L-AR-Gmg"/>
+                        <outlet property="buttonsRW1" destination="gCq-fL-N1B" id="7cT-OA-KJq"/>
+                        <outlet property="buttonsRW2" destination="agu-Lz-b5u" id="5eZ-hy-opg"/>
+                        <outlet property="buttonsRW3" destination="v4i-b3-LPn" id="Plk-Ok-48q"/>
+                        <outlet property="buttonsRW4" destination="90y-jW-MSR" id="ZT3-PO-jB9"/>
+                        <outlet property="cluesLbl" destination="xnB-7Q-6DC" id="98t-MB-xnJ"/>
+                        <outlet property="currentAnswer" destination="xFd-PR-9Nk" id="mFH-CS-hsQ"/>
+                        <outlet property="scoresLbl" destination="bqb-QN-UlK" id="Na5-JG-ldj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.6953125" y="132.8125"/>
         </scene>
     </scenes>
 </document>

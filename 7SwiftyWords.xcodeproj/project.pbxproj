@@ -12,6 +12,8 @@
 		04F0667A2035DBF300568F6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F066782035DBF300568F6F /* Main.storyboard */; };
 		04F0667C2035DBF300568F6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F0667B2035DBF300568F6F /* Assets.xcassets */; };
 		04F0667F2035DBF300568F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F0667D2035DBF300568F6F /* LaunchScreen.storyboard */; };
+		04F06687203631DE00568F6F /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04F06686203631DE00568F6F /* level1.txt */; };
+		04F06689203631FA00568F6F /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04F06688203631FA00568F6F /* level2.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		04F0667B2035DBF300568F6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F0667E2035DBF300568F6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F066802035DBF300568F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F06686203631DE00568F6F /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		04F06688203631FA00568F6F /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		04F066732035DBF300568F6F /* 7SwiftyWords */ = {
 			isa = PBXGroup;
 			children = (
+				04F06688203631FA00568F6F /* level2.txt */,
+				04F06686203631DE00568F6F /* level1.txt */,
 				04F066742035DBF300568F6F /* AppDelegate.swift */,
 				04F066762035DBF300568F6F /* ViewController.swift */,
 				04F066782035DBF300568F6F /* Main.storyboard */,
@@ -123,7 +129,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F06689203631FA00568F6F /* level2.txt in Resources */,
 				04F0667F2035DBF300568F6F /* LaunchScreen.storyboard in Resources */,
+				04F06687203631DE00568F6F /* level1.txt in Resources */,
 				04F0667C2035DBF300568F6F /* Assets.xcassets in Resources */,
 				04F0667A2035DBF300568F6F /* Main.storyboard in Resources */,
 			);
@@ -281,7 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SabrinaFletcher.-SwiftyWords";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SabrinaFletcher.-SwiftyWords";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
